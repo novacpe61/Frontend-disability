@@ -6,15 +6,13 @@
 </template>
 
 <script>
-import axios from "axios";
-import userServices from '../apiServices/usersService';
+import userServices from "../apiServices/usersService";
 export default {
   data() {
     return {
       data_user: [],
-    }
+    };
   },
-  
   async created() {
     try {
       const res = await userServices.index();
